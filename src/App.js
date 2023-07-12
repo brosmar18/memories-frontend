@@ -9,7 +9,7 @@ const App = () => {
         <Container maxWidth="lg">
             <AppBar position='static' color='inherit'>
                 <Typography variant='h2' align='center'>Memories</Typography>
-                <img src={memories} alt='memories' height="60" />
+                <img src={memories} alt='memories' height="600" />
             </AppBar>
             <Grow in>
                 <Container>

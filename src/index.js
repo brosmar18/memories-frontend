@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Provider} from 'react-redux';
-import {applyMiddleware, compose, legacy_createStore} from 'redux';
+import {applyMiddleware, compose} from 'redux';
 import {legacy_createStore as createStore} from 'redux';
 import thunk from 'redux-thunk';
 

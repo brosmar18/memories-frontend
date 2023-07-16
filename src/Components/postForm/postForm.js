@@ -4,9 +4,10 @@ import {useDispatch, useSelector} from 'react-redux';
 import FileBase from 'react-file-base64';
 
 const PostForm = () => {
+    const [postData, setPostData] = useState({creator: '', title: '', message: '', tags: '', selectedFile: ''});
 
     const handleSubmit = () => {
-        
+
     }
 
     return (
@@ -17,7 +18,7 @@ const PostForm = () => {
                     <Form onSubmit={handleSubmit}>
                         <Form.Group className='mb-3'>
                             <Form.Label>Creator</Form.Label>
-                            <Form.Control type='text' placeholder='Creator' />
+                            <Form.Control type='text' placeholder='Creator' value={postData.creator} onChange={} />
                         </Form.Group>
 
                         <Form.Group className='mb-3'>

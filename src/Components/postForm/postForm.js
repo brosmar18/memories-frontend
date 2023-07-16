@@ -1,15 +1,20 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Button, Form, Container, Card } from 'react-bootstrap';
 import {useDispatch, useSelector} from 'react-redux';
 import FileBase from 'react-file-base64';
 
 const PostForm = () => {
+
+    const handleSubmit = () => {
+        
+    }
+
     return (
         <Container>
             <Card className='mb-4 shadow-sm'>
                 <Card.Header as='h3' className='text-center'>Creating a Memory</Card.Header>
                 <Card.Body>
-                    <Form>
+                    <Form onSubmit={handleSubmit}>
                         <Form.Group className='mb-3'>
                             <Form.Label>Creator</Form.Label>
                             <Form.Control type='text' placeholder='Creator' />

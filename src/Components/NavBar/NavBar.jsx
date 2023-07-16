@@ -1,6 +1,6 @@
 import React from 'react'
 import {Container, Nav, Navbar} from 'react-bootstrap';
-import memories from '../../images/memories.png';
+import logo from '../../images/logo.png';
 import './NavBar.css';
 
 const NavBar = () => {
@@ -8,7 +8,7 @@ const NavBar = () => {
     <Navbar bg='dark' data-bs-theme='dark' expand="lg" className='bg-body-tertiary'>
         <Container>
             <Navbar.Brand href='#'>
-                <img className='nav__img' src={memories} alt='memories' />
+                <img className='nav__img' src={logo} alt='logo' />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls='basic-navbar-nav' />
             <Navbar.Collapse id='basic-navbar-nav'>

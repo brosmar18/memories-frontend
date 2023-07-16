@@ -3,6 +3,7 @@ import Posts from './Components/Posts/Posts';
 import NavBar from './Components/NavBar/NavBar';
 import {useDispatch} from 'react-redux';
 import {getPosts} from './Actions/posts';
+import Form from './Components/postForm/postForm';
 
 
 const App = () => {
@@ -20,6 +21,9 @@ const App = () => {
             </div>
             <div>
                 <Posts />
+            </div>
+            <div>
+                <Form />
             </div>
         </div>
     );

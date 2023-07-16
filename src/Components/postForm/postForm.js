@@ -38,7 +38,7 @@ const PostForm = () => {
 
                         <Form.Group controlId="formFile" className="mb-3">
                             <Form.Label>Upload File</Form.Label>
-                            <Form.Control type="file" />
+                            <Form.Control multiple={false} type="file" onDone={({base64}) => setPostData({...postData, selectedFile: base64})} />
                         </Form.Group>
 
                         <Button variant='primary' type='submit'>

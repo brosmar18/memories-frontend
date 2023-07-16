@@ -1,5 +1,4 @@
 import React from 'react';
-import memories from './images/memories.png';
 import Posts from './Components/Posts/Posts';
 import NavBar from './Components/NavBar/NavBar';
 

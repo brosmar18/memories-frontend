@@ -1,5 +1,7 @@
 import React from 'react';
 import { Button, Form, Container, Card } from 'react-bootstrap';
+import {useDispatch, useSelector} from 'react-redux';
+import FileBase from 'react-file-base64';
 
 const PostForm = () => {
     return (

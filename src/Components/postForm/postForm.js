@@ -2,12 +2,16 @@ import React, {useState, useEffect} from 'react';
 import { Button, Form, Container, Card } from 'react-bootstrap';
 import {useDispatch, useSelector} from 'react-redux';
 import FileBase from 'react-file-base64';
+import {createPost} from '../../Actions/posts';
 
 const PostForm = () => {
     const [postData, setPostData] = useState({creator: '', title: '', message: '', tags: '', selectedFile: ''});
+    const dispatch = useDispatch();
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
+        dispatch(createPost(postData));
     }
 
     return (

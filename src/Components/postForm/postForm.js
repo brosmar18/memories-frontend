@@ -18,22 +18,22 @@ const PostForm = () => {
                     <Form onSubmit={handleSubmit}>
                         <Form.Group className='mb-3'>
                             <Form.Label>Creator</Form.Label>
-                            <Form.Control type='text' placeholder='Creator' value={postData.creator} onChange={(e) => setPostData({...postData, creator: e.target.value})} />
+                            <Form.Control name='creator' type='text' placeholder='Creator' value={postData.creator} onChange={(e) => setPostData({...postData, creator: e.target.value})} />
                         </Form.Group>
 
                         <Form.Group className='mb-3'>
                             <Form.Label>Title</Form.Label>
-                            <Form.Control type='text' placeholder='Title' />
+                            <Form.Control name='title' type='text' placeholder='Title' value={postData.title} onChange={(e) => setPostData({...postData, title: e.target.value})} />
                         </Form.Group>
 
                         <Form.Group className='mb-3'>
                             <Form.Label>Message</Form.Label>
-                            <Form.Control type='text' placeholder='Message' />
+                            <Form.Control name='message' type='text' placeholder='Message' value={postData.message} onChange={(e) => setPostData({...postData, message: e.target.value})} />
                         </Form.Group>
 
                         <Form.Group className='mb-3'>
                             <Form.Label>Tags</Form.Label>
-                            <Form.Control type='text' placeholder='Tags' />
+                            <Form.Control name='tags' type='text' placeholder='Tags' value={postData.tags} onChange={(e) => setPostData({...postData, tags: e.target.value})} />
                         </Form.Group>
 
                         <Form.Group controlId="formFile" className="mb-3">

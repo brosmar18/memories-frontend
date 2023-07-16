@@ -18,7 +18,7 @@ const PostForm = () => {
                     <Form onSubmit={handleSubmit}>
                         <Form.Group className='mb-3'>
                             <Form.Label>Creator</Form.Label>
-                            <Form.Control type='text' placeholder='Creator' value={postData.creator} onChange={(e) => setPostData({creator: e.target.value})} />
+                            <Form.Control type='text' placeholder='Creator' value={postData.creator} onChange={(e) => setPostData({...postData, creator: e.target.value})} />
                         </Form.Group>
 
                         <Form.Group className='mb-3'>

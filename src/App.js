@@ -3,7 +3,7 @@ import Posts from './Components/Posts/Posts';
 import NavBar from './Components/NavBar/NavBar';
 import {useDispatch} from 'react-redux';
 import {getPosts} from './Actions/posts';
-import Form from './Components/Form/Form';
+import Form from './Components/postForm/postForm';
 
 
 const App = () => {

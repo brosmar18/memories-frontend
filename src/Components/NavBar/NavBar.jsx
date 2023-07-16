@@ -1,10 +1,9 @@
 import React from 'react'
+import {Container, Nav, Navbar, NavDropdown} from 'react-bootstrap';
 
 const NavBar = () => {
   return (
-    <div>
-      
-    </div>
+    <h1>NavBar</h1>
   )
 }
 

@@ -12,7 +12,7 @@ const Posts = () => {
             <span className='visually-hidden'>Loading...</span>
         </Spinner> : (
             <Card style={{width: '18rem'}}>
-                
+                <Card.Img variant="top" src='https://placekitten.com/640/360' />
             </Card>
         )
     );

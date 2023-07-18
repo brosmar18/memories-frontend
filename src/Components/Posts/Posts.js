@@ -1,18 +1,21 @@
 import React from 'react';
 import Post from './Post/Post';
 import {useSelector} from 'react-redux';
-
+import {Button, Card, Spinner} from 'react-bootstrap';
 const Posts = () => {
     const posts = useSelector((state) => state.posts)
 
     console.log(posts);
     return (
-        <>
-            <h1>Posts</h1>
-            <Post />
-            <Post />
-        </>
-    )
+        !posts.length ? 
+        <Spinner animation="bordr" role="status">
+            <span className='visually-hidden'>Loading...</span>
+        </Spinner> : (
+            <Card style={{width: '18rem'}}>
+                
+            </Card>
+        )
+    );
 }
 
 export default Posts;
